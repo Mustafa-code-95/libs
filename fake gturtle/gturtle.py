@@ -64,3 +64,6 @@ class gturtle:
 
     def mainloop():
         return turtle.mainloop()
+
+    def done():
+        return turtle.done()
