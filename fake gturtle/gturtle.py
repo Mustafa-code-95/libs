@@ -4,6 +4,7 @@ import turtle
 class gturtle:
     def __init__(self):
         self.t = turtle.Turtle()
+        self.screen = turtle.Screen()
 
     def forward(self, distance):
         self.t.forward(distance)
@@ -44,11 +45,11 @@ class gturtle:
     def register_shape(addshape):
         return turtle.register_shape(addshape)
 
-    def bgcolor(bgcolor):
-        return turtle.bgcolor(bgcolor)
+    def bgcolor(self, bgcolor):
+        self.screen.bgcolor(bgcolor)
 
-    def bgpic(bgpic):
-        return turtle.bgpic(bgpic)
+    def bgpic(self, bgpic):
+        self.screen.bgpic(bgpic)
 
     def title(title):
         return turtle.title(title)
