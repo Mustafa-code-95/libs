@@ -61,3 +61,6 @@ class gturtle:
 
     def exitonclick():
         return turtle.exitonclick()
+
+    def mainloop():
+        return turtle.mainloop()
